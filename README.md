@@ -8,7 +8,7 @@ Source code for the short course [Ray Tracing in One Weekend](https://raytracing
 
 ```
 sudo apt install ninja-build
-pip install -re requirements.txt
+pip install -r requirements.txt
 
 meson setup build
 cd build
