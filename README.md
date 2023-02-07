@@ -18,7 +18,6 @@ ninja
 ### Running the code and viewing the result
 
 ```
-cd build
 ./main > render.ppm
 eog render.ppm
 ```
