@@ -11,13 +11,17 @@ sudo apt install ninja-build
 pip install -r requirements.txt
 
 meson setup build
-cd build
-ninja
+ninja -C build
 ```
 
 ### Running the code and viewing the result
 
 ```
-./main > render.ppm
+./build/main > assets/images/render.ppm
 eog render.ppm
+```
+
+### Converting results to jpeg
+```
+ppmtojpeg assets/images/render.ppm > assets/images/render.jpg
 ```
